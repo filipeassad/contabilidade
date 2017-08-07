@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.controller.ConsultaLancamentoController">
+
+	<VBox alignment="CENTER" style="-fx-background-color: #d9d9d9">
+		<HBox prefHeight="120" spacing="5" style="-fx-background-color: #708090" alignment="CENTER">
+			<padding>
+				<Insets top="3" right="3" bottom="3" left="3" />
+			</padding>
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="Empresa" textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="Nota Fiscal" textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="Dt. Lanç." textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>			
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="Dt. Emi." textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>		
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="C. Crédito" textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>		
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="C. Débito" textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>		
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="Valor" textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>		
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="Historico" textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>
+			
+			<VBox alignment="CENTER" spacing="2" prefWidth="80">
+				<Label text="Opções" textFill="#ffffff" style="-fx-font-weight: bold"/>				
+			</VBox>			
+		</HBox>
+		<ListView fx:id="listaLancamento" />
+	</VBox>
+	
+</VBox>
+

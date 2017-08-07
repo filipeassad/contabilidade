@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.controller.LancamentoController" alignment="CENTER" spacing="10">
+
+	<Label fx:id="titulo" text="CADASTRO DE LANÇAMENTOS" style="-fx-font-size:25px; -fx-font-weight: bold;" />	
+	
+	<HBox spacing="10" alignment="BASELINE_LEFT" >
+		<Label text="Empresa:" prefWidth="120" alignment="BASELINE_RIGHT" />
+		<ComboBox fx:id="cbEmpresa" prefWidth="200"/>
+		<Label text="Número da Nota:" prefWidth="100" alignment="BASELINE_RIGHT" />
+		<TextField fx:id="tfNumNota" prefWidth="200"/>
+	</HBox>
+	
+	<HBox spacing="10" alignment="BASELINE_LEFT">
+		<Label text="Data Lançamento:" prefWidth="120" alignment="BASELINE_RIGHT" />
+		<TextField fx:id="tfDataLan" prefWidth="200"/>
+		<Label text="Data Nota Fical:" prefWidth="100" alignment="BASELINE_RIGHT" />
+		<TextField fx:id="tfDataNot" prefWidth="200"/>
+	</HBox>
+	
+	<HBox spacing="10" alignment="BASELINE_LEFT">
+		<Label text="Conta Devedora:" prefWidth="120" alignment="BASELINE_RIGHT" />
+		<ComboBox fx:id="cbCtadev" prefWidth="200"/>
+		<Label text="Conta Credora:" prefWidth="100" alignment="BASELINE_RIGHT" />
+		<ComboBox fx:id="cbCtacre" prefWidth="200"/>
+	</HBox>
+	
+	<HBox spacing="10" alignment="BASELINE_LEFT">
+		<Label text="Valor:" prefWidth="120" alignment="BASELINE_RIGHT" />
+		<TextField fx:id="tfValor" prefWidth="200" />
+	</HBox>	
+	
+	<HBox spacing="10" alignment="BASELINE_LEFT">
+		<Label text="Histórico:" prefWidth="120" alignment="BASELINE_RIGHT" />
+		<TextField fx:id="tfHistorico" prefWidth="520"/>
+	</HBox>
+	
+	<HBox alignment="CENTER">
+		<Button text="Salvar" onAction="#cadastrar"/>
+	</HBox>
+	
+</VBox>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.geometry.Insets?>
+
+<VBox prefHeight="400" prefWidth="800" xmlns:fx="http://javafx.com/fxml/1"
+		fx:controller="com.java.controller.MainController" style="-fx-background-color: #d9d9d9">
+		
+		<MenuBar fx:id="menuBar" onKeyPressed="#funcaoTeclado">
+		
+			<menus>
+				<Menu text="Arquivo">
+					<MenuItem text="Cadastro Lançamentos" onAction="#cadastroLan" />
+					<MenuItem text="Consulta Lançamentos" onAction="#consultaLan" />
+					<MenuItem text="Sair" onAction="#sair"/>
+				</Menu>			
+			</menus>		
+		
+		</MenuBar>
+		
+		<VBox fx:id="vBox" prefWidth="800" >
+			<padding> <Insets top="25" right="25" bottom="10" left="25"/> </padding>		
+		</VBox>
+
+</VBox>
+
